@@ -190,7 +190,7 @@ cp .env.example .env.local
    ```
 
 3. **Open Application**:
-   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+   Navigate to [https://news-pulse-black.vercel.app/] in your browser.
 
 ---
 
