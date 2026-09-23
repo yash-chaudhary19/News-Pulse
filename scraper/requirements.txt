@@ -1,0 +1,9 @@
+feedparser
+python-dateutil
+pydantic
+trafilatura
+requests
+lxml_html_clean
+scikit-learn
+psycopg2-binary
+python-dotenv
