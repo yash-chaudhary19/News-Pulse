@@ -7,9 +7,13 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const connectionString = process.env.DATABASE_URL || 'postgresql://localhost:5432/news_pulse';
 
+const isLocal = connectionString.includes('localhost') || connectionString.includes('127.0.0.1');
+
 const pool = new Pool({
   connectionString,
+  ssl: isLocal ? false : { rejectUnauthorized: false }
 });
+
 
 pool.on('error', (err) => {
   console.error('Unexpected error on idle PostgreSQL client', err);

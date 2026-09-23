@@ -35,9 +35,10 @@ coverage/
 *.tsbuildinfo
 next-env.d.ts
 
-# OS, IDE & Logs
-.DS_Store
-*.log
+# Local migration files
+supabase_migration.sql
+*.dump
+*.sql.gz
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
